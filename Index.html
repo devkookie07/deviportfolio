@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Portfolio</title>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <style>
+            .carousel .carousel-item {
+                max-height: 550px;
+            }
+
+            .carousel-item img {
+                object-fit: cover;
+                max-height: 550px;
+            }
+
+            .nav-container {
+                border-width: 0;
+                box-shadow: none;
+                background-color: rgba(32, 37, 89);
+            }
+
+            .navbar {
+                background-color: rgba(32, 37, 89);
+                border: 0;
+            }
+
+            li a:hover:not(.active) {
+                background-color: rgba(41, 56, 147);
+            }
+
+            /* li a.active {
+                color: rgb(52, 46, 243);
+                background-color: #04AA6D;
+            } */
+
+            .color-me {
+                color: rgb(252, 252, 252);
+            }
+
+            * {
+                box-sizing: border-box;
+            }
+
+            .column {
+                float: left;
+                width: 25%;
+                height: 300px;
+            }
+
+            .row:after {
+                content: "";
+                display: table;
+                clear: both;
+            }
+        </style>
+
+    </head>
+
+    <body style="background-color: rgb(255, 255, 255);font-family:Times New Roman">
+
+        <!-- Navigation Bar Find out how to change the color of the texts-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+
+            <div class="container-fluid bg-color navbar">
+                <!-- Rough placeholder names and need to make pages for these links-->
+                <ul class="navbar-nav navbar-dark color-me;">
+                    <a class="navbar-brand"
+                        style="color:rgb(241, 91, 51);font-family:Times New Roman; margin-left:10px;" href="#">My
+                        Design
+                        Archive</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/Aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/Digitalworks.html">Digital Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/sketch.html">Sketches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./Html/contactme.html">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="padding-right:20px;">
+                    <a href="./Index.html">
+                        <button class="btn btn-primary" type="button">Home</button>
+                    </a>
+                </form>
+            </div>
+        </nav>
+        <!-- END OF NAV -->
+        <!-- New Addition -->
+
+        <div class="row" style="padding-top:8%;">
+            <div class=" col-12 col-sm-12" style="background-color:rgb(255, 255, 255);">
+                <div class="card-body" style="text-align: center;">
+                    <img class="card-img-top ;img-fluid ; mx-auto d-block; Images1" src="./img/Openingpage.png"
+                        style="width:80%">
+                    <div style="border:none ;color: rgb(55, 75, 49); font-weight: 130;  font-family:Times New Roman;"
+                        class="card-footer  bg-white">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Another Part -->
+
+        <div class="row" style="padding-top:6%; padding-bottom:2%;">
+            <div class=" col-12 col-sm-12 col-md-3 col-lg-3 " style="background-color:rgb(255, 255, 255);">
+                <div class="card-body" style="text-align: center;">
+                    <h4 style="font-weight:bold; color:rgb(8, 8, 6); letter-spacing: 2px;" class="card-title">
+                        ABOUT ME</h4>
+                    <a href="./Html/Aboutme.html" class="btn Butn">
+                        <img class="card-img-top ;img-fluid ; mx-auto d-block; Images1" src="./img/devs2.png"
+                            style="width:35%">
+                    </a>
+                    <div style="border:none ;color: rgb(55, 75, 49); font-weight: 130;  font-family:Times New Roman;"
+                        class="card-footer  bg-white">
+                        <a href="./Html/Aboutme.html" class="btn Butn">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-12 col-md-3 col-lg-3" style="background-color:rgb(255, 255, 255);">
+                <div class="card-body" style="text-align: center;">
+                    <h4 style="font-weight:bold; color:rgb(8, 8, 6); letter-spacing: 2px;" class="card-title">
+                        DIGITAL WORKS </h4>
+                    <a href="./Html/Digitalworks.html" class="btn Butn">
+                        <img class="card-img-top ;img-fluid ; mx-auto d-block; Images1" src="./img/Digitalwork.png"
+                            style="width:35%">
+                    </a>
+                    <div style="border:none ;color: rgb(55, 75, 49); font-weight: 130;  font-family:Times New Roman;"
+                        class="card-footer  bg-white">
+                        <a href="./Html/Digitalworks.html" class="btn Butn">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-12 col-md-3 col-lg-3 " style="background-color:rgb(255, 255, 255);">
+                <div class="card-body" style="text-align: center;">
+                    <h4 style="font-weight:bold; color:rgb(8, 8, 6); letter-spacing: 2px;" class="card-title">
+                        SKETCHES</h4>
+                    <a href="./Html/sketch.html" class="btn Butn">
+                        <img class="card-img-top ;img-fluid ; mx-auto d-block; Images1" src="./img/Sketchinglogo.png"
+                            style="width:35%">
+                    </a>
+                    <div style="border:none ;color: rgb(55, 75, 49); font-weight: 130;  font-family:Times New Roman;"
+                        class="card-footer  bg-white">
+                        <a href="./Html/sketch.html" class="btn Butn">View</a>
+                    </div>
+                </div>
+            </div>
+            <div class=" col-12 col-sm-12 col-md-3 col-lg-3 " style="background-color:rgb(255, 255, 255);">
+                <div class="card-body" style="text-align: center;">
+                    <h4 style="font-weight:bold; color:rgb(8, 8, 6); letter-spacing: 2px;" class="card-title">
+                        CONTACT ME</h4>
+                    <a href="./Html/contactme.html" class="btn Butn">
+                        <img class="card-img-top ;img-fluid ; mx-auto d-block; Images1" src="./img/Contactlogo.png"
+                            style="width:35%">
+                    </a>
+                    <div style="border:none ;color: rgb(55, 75, 49); font-weight: 130;  font-family:'Times New Roman'">
+                        class="card-footer bg-white">
+                        <a href="./Html/contactme.html" class="btn Butn">View</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- carousel -->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+            <!-- Indicators/dots -->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+            </div>
+
+            <!-- The slideshow/carousel -->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/panda.png" alt="" class="d-block" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/VinylCover.png" alt="" class="d-block" style="width:100%;">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/Cerealbox.png" alt="" class="d-block" style="width:100%;">
+                </div>
+            </div>
+            <!-- Left and right controls/icons -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+        </div>
+
+    </body>
+
+</html>

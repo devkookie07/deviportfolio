@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>contactme.</title>
+        <!-- Latest compiled and minified CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Latest compiled JavaScript -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+
+        <script type="text/javascript">
+            function validate() {
+                var firstname = document.getElementById("fname");
+                var lastname = document.getElementById("lname");
+                var email = document.getElementById("country");
+                var subject = document.getElementById("state");
+
+                if (firstname.value.trim() == "" || lastname.value.trim() == "" || email.value.trim() == "" || subject.value.trim() == "") {
+                    alert("Required field");
+                    return false;
+                }
+                else {
+                    true;
+                }
+            }
+        </script>
+
+        <style>
+            .carousel .carousel-item {
+                max-height: 550px;
+            }
+
+            .carousel-item img {
+                object-fit: cover;
+                max-height: 550px;
+            }
+
+            .nav-container {
+                border-width: 0;
+                box-shadow: none;
+                background-color: rgba(32, 37, 89);
+            }
+
+            .navbar {
+                background-color: rgba(32, 37, 89);
+                border: 0;
+            }
+
+            li a:hover:not(.active) {
+                background-color: rgba(41, 56, 147);
+            }
+
+            .color-me {
+                color: rgb(252, 252, 252);
+            }
+
+            input[type=text],
+            select {
+                width: 100%;
+                padding: 12px 20px;
+                margin: 8px 0;
+                display: inline-block;
+                border: 1px solid #ccc;
+                border-radius: 4px;
+                box-sizing: border-box;
+            }
+
+            input[type=submit] {
+                width: 100%;
+                background-color: #4CAF50;
+                color: white;
+                padding: 14px 20px;
+                margin: 8px 0;
+                border: none;
+                border-radius: 4px;
+                cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+                background-color: #45a049;
+            }
+
+            div {
+                border-radius: 5px;
+                padding: 20px;
+            }
+        </style>
+
+    </head>
+
+    <body style="background-color: rgba(255, 255, 255, 0.719);font-family:Times New Roman">
+
+        <!-- Navigation Bar Find out how to change the color of the texts-->
+        <nav class="navbar navbar-expand-md navbar-dark">
+
+            <div class="container-fluid bg-color navbar">
+                <!-- Rough placeholder names and need to make pages for these links-->
+                <ul class="navbar-nav navbar-dark color-me;">
+                    <a class="navbar-brand"
+                        style="color:rgb(241, 91, 51);font-family:Times New Roman; margin-left:10px;" href="#">My Design
+                        Archive</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/Aboutme.html">About Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/Digitalworks.html">Digital Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/sketch.html">Sketches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../Html/contactme.html">Contact Me</a>
+                    </li>
+                </ul>
+                <form class="d-flex" style="padding-right:20px;">
+                    <a href="../Index.html">
+                        <button class="btn btn-primary" type="button">Home</button>
+                    </a>
+                </form>
+            </div>
+        </nav>
+        <div style="padding-left:34%;padding-top:5%;">
+            <img src="../img/Contactme.png" alt="" width="60%">
+        </div>
+        <div style="padding-left:50px;">
+            <form action="../Index.html" onsubmit="return validate()">
+                <label for="fname">Full Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your full name.." required>
+
+                <label for="phonenumber">Phone Number</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your Phone Number.." required>
+
+                <label for="country">Country</label>
+                <input type="text" id="country" name="country" placeholder="Your Country.." required>
+
+                <label for="state">State</label>
+                <select id="state" name="state">
+                    <option value="Mumbai">Mumbai</option>
+                    <option value="Banglore">Banglore</option>
+                    <option value="Pune">Pune</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <div style="padding-left:34%;padding-top:4%;">
+            <img src="../img/Contactmeee.png" alt="" width="60%">
+        </div>
+
+    </body>
+
+</html>
